@@ -19,7 +19,7 @@ jdjdjdjdjtesttest
 ###
 ####
 
-Rules:
+Rules:ffff
 - You must use loops (for or while).
 - No recursion allowed.
 - Output must match exactly.
