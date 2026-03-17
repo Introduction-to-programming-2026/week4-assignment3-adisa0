@@ -18,3 +18,23 @@ Rules:
 - You must use strcmp().
 - Do NOT use == for string comparison.
 */
+#include <cs50.h>
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+{
+    string names[] = {"Battista", "Bari", "Anatoli", "Quinn"};
+    string s = get_string("Name: ");
+
+    for (int i = 0; i < 4; i++)
+    {
+        if (strcmp(names[i], s) == 0)
+        {
+            printf("Found\n");
+            return 0;
+        }
+    }
+    printf("Not found\n");
+    return 1;
+}
